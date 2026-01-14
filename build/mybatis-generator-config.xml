@@ -5,15 +5,15 @@
 <!-- see http://mybatis.org/generator/configreference/xmlconfig.html -->
 <generatorConfiguration>
 
-    <context id="MysqlTables" targetRuntime="MyBatis3">
+    <context id="PostgresqlTables" targetRuntime="MyBatis3">
         <commentGenerator>
             <property name="suppressAllComments" value="true"/>
         </commentGenerator>
         <jdbcConnection
-                connectionURL="jdbc:mysql://127.0.0.1:3306/seezoon-stack"
-                driverClass="com.mysql.cj.jdbc.Driver"
+                connectionURL="jdbc:postgresql://127.0.0.1:5432/seezoon-stack"
+                driverClass="org.postgresql.Driver"
                 password=""
-                userId="root">
+                userId="postgres">
             <!-- 只获取当前指定库的表-->
             <property name="nullCatalogMeansCurrent" value="true"/>
         </jdbcConnection>

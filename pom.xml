@@ -119,7 +119,7 @@
         <dependency>
             <groupId>org.springframework.retry</groupId>
             <artifactId>spring-retry</artifactId>
-            <version>${spring-retry.version}</version>
+            <!-- <version>${spring-retry.version}</version> -->
         </dependency>
         <dependency>
             <groupId>io.swagger</groupId>
@@ -136,7 +136,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>versions-maven-plugin</artifactId>
-                <version>${versions-maven-plugin.version}</version>
+                <!-- <version>${versions-maven-plugin.version}</version> -->
                 <configuration>
                     <generateBackupPoms>false</generateBackupPoms>
                 </configuration>

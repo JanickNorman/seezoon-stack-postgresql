@@ -14,7 +14,7 @@
 
     <properties>
         <mybatis-generator-maven-plugin.version>1.4.1</mybatis-generator-maven-plugin.version>
-        <mysql-connector-java.version>8.0.22</mysql-connector-java.version>
+        <postgresql.version>42.7.1</postgresql.version>
     </properties>
 
     <dependencies>
@@ -57,8 +57,8 @@
             <artifactId>freemarker</artifactId>
         </dependency>
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
             <scope>runtime</scope>
         </dependency>
     </dependencies>
@@ -92,9 +92,9 @@
                 </configuration>
                 <dependencies>
                     <dependency>
-                        <groupId>mysql</groupId>
-                        <artifactId>mysql-connector-java</artifactId>
-                        <version>${mysql-connector-java.version}</version>
+                        <groupId>org.postgresql</groupId>
+                        <artifactId>postgresql</artifactId>
+                        <version>${postgresql.version}</version>
                     </dependency>
                 </dependencies>
             </plugin>
