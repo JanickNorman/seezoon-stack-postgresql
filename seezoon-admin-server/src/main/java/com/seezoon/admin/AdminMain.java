@@ -8,7 +8,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 import com.seezoon.admin.framework.properties.SeezoonAdminProperties;
 
 /**
- * 程序入口
+ * Application entry point
  *
  * @author hdf
  */

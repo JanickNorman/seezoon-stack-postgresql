@@ -7,8 +7,8 @@ import com.seezoon.dao.framework.CrudDao;
 import com.seezoon.dao.modules.sys.entity.SysGen;
 
 /**
- * 代码生成
- * @author seezoon-generator 2021年3月29日 下午11:27:05
+ * Code Generation
+ * @author seezoon-generator 2021-03-29 11:27:05 PM
  */
 @Repository
 @Mapper

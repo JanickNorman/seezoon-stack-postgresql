@@ -14,7 +14,7 @@
                 driverClass="org.postgresql.Driver"
                 password=""
                 userId="postgres">
-            <!-- 只获取当前指定库的表-->
+            <!-- Only retrieve tables from the currently specified database-->
             <property name="nullCatalogMeansCurrent" value="true"/>
         </jdbcConnection>
 
@@ -38,7 +38,7 @@
         <table enableCountByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" enableUpdateByExample="false"
                tableName="%">
-            <!-- 自增返回主键使用 -->
+            <!-- Use for auto-increment primary key return -->
             <!--
             <generatedKey column="id" sqlStatement="JDBC"/>
             -->

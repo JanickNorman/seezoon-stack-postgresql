@@ -9,18 +9,18 @@ import com.seezoon.dao.framework.entity.AbstractQueryCondition;
 import com.seezoon.dao.framework.entity.BaseEntity;
 
 /**
- * 包含基本CRUD定义，DAO 完成基础字段验证
+ * Contains basic CRUD definitions, DAO completes basic field validation
  *
  * @author hdf
  * @param <T>
- *            DB 实体
+ *            DB entity
  * @param <PK>
- *            主键 快速开发所以只支持简单主键，即数值和字符
+ *            Primary key - only supports simple primary keys (numeric and string) for rapid development
  */
 public interface CrudDao<T extends BaseEntity<PK>, PK> extends BaseDao {
 
     /**
-     * 通用删除，实际线上一般不给删除权限，无意义，可以根据项目情况注释掉
+     * Generic delete, usually no delete permission in production, meaningless, can be commented out based on project needs
      *
      * @param pks
      * @return
@@ -28,7 +28,7 @@ public interface CrudDao<T extends BaseEntity<PK>, PK> extends BaseDao {
     int deleteByPrimaryKey(@NotEmpty PK... pks);
 
     /**
-     * 插入
+     * Insert
      *
      * @param records
      * @return
@@ -36,7 +36,7 @@ public interface CrudDao<T extends BaseEntity<PK>, PK> extends BaseDao {
     int insert(@NotEmpty T... records);
 
     /**
-     * 根据主键查询
+     * Query by primary key
      *
      * @param pk
      * @return
@@ -44,7 +44,7 @@ public interface CrudDao<T extends BaseEntity<PK>, PK> extends BaseDao {
     T selectByPrimaryKey(@NotNull PK pk);
 
     /**
-     * 查询
+     * Query
      *
      * @param condition
      * @return
@@ -52,7 +52,7 @@ public interface CrudDao<T extends BaseEntity<PK>, PK> extends BaseDao {
     List<T> selectByCondition(AbstractQueryCondition condition);
 
     /**
-     * 选择性更新
+     * Selective update
      *
      * @param record
      * @return
@@ -60,7 +60,7 @@ public interface CrudDao<T extends BaseEntity<PK>, PK> extends BaseDao {
     int updateByPrimaryKeySelective(@NotNull T record);
 
     /**
-     * 主键全字段更新
+     * Full field update by primary key
      *
      * @param record
      * @return
